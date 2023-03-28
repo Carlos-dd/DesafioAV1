@@ -10,11 +10,10 @@
         android:id="@+id/tvTitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
-        android:text="Saúde na Prática"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="108dp"
+        android:text="@string/app_name"
         android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -22,23 +21,24 @@
         android:id="@+id/edUsuario"
         android:layout_width="258dp"
         android:layout_height="77dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginStart="272dp"
+        android:layout_marginTop="4dp"
         android:ems="10"
-        android:inputType="textPersonName"
         android:hint="@string/name"
-        app:layout_constraintEnd_toEndOf="@+id/tvTitulo"
-        app:layout_constraintStart_toStartOf="@+id/tvTitulo"
-        app:layout_constraintTop_toBottomOf="@+id/tvTitulo" />
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/tvTitulo"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/edSenha"
         android:layout_width="258dp"
         android:layout_height="77dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
-        android:inputType="numberPassword"
         android:hint="@string/password"
+        android:inputType="numberPassword"
         app:layout_constraintEnd_toEndOf="@+id/edUsuario"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/edUsuario"
         app:layout_constraintTop_toBottomOf="@+id/edUsuario" />
 
@@ -46,7 +46,6 @@
         android:id="@+id/checkBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
         android:text="@string/remember"
         app:layout_constraintStart_toStartOf="@+id/edSenha"
         app:layout_constraintTop_toBottomOf="@+id/edSenha" />
@@ -55,7 +54,7 @@
         android:id="@+id/btLogin"
         android:layout_width="217dp"
         android:layout_height="55dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="12dp"
         android:text="@string/login"
         app:layout_constraintEnd_toEndOf="@+id/edSenha"
         app:layout_constraintHorizontal_bias="0.512"
