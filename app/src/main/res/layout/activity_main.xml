@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
-        android:text="Saúde na Prática"
+        android:text="Desafio e Bem Estar"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -19,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/edUsuario"
+        android:id="@+id/Login"
         android:layout_width="258dp"
         android:layout_height="77dp"
         android:layout_marginTop="80dp"
@@ -31,34 +31,52 @@
         app:layout_constraintTop_toBottomOf="@+id/tvTitulo" />
 
     <EditText
-        android:id="@+id/edSenha"
+        android:id="@+id/Senha"
         android:layout_width="258dp"
         android:layout_height="77dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="48dp"
         android:ems="10"
-        android:inputType="numberPassword"
         android:hint="@string/password"
-        app:layout_constraintEnd_toEndOf="@+id/edUsuario"
-        app:layout_constraintStart_toStartOf="@+id/edUsuario"
-        app:layout_constraintTop_toBottomOf="@+id/edUsuario" />
+        android:inputType="numberPassword"
+        app:layout_constraintEnd_toEndOf="@+id/Login"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Login"
+        app:layout_constraintTop_toBottomOf="@+id/Login" />
 
     <CheckBox
         android:id="@+id/checkBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="60dp"
         android:text="@string/remember"
-        app:layout_constraintStart_toStartOf="@+id/edSenha"
-        app:layout_constraintTop_toBottomOf="@+id/edSenha" />
+        app:layout_constraintStart_toStartOf="@+id/Senha"
+        app:layout_constraintTop_toBottomOf="@+id/Senha" />
 
     <Button
         android:id="@+id/btLogin"
         android:layout_width="217dp"
         android:layout_height="55dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="172dp"
         android:text="@string/login"
-        app:layout_constraintEnd_toEndOf="@+id/edSenha"
-        app:layout_constraintHorizontal_bias="0.512"
-        app:layout_constraintStart_toStartOf="@+id/edSenha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.401"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Esporte:"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.573" />
+
+    <ScrollView
+        android:layout_width="15dp"
+        android:layout_height="81dp"
+        tools:layout_editor_absoluteX="-50dp"
+        tools:layout_editor_absoluteY="763dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
